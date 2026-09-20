@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Loan Calculator: Payment, Amount or Payoff Time</title>
+<meta name="description" content="Find a loan’s monthly payment, how much you can borrow for a given payment, or how long payoff takes. Shows total interest on every result.">
+<link rel="canonical" href="https://debtpayoffmath.com/loan-calculator/">
+<meta property="og:title" content="Loan Calculator: Payment, Amount or Payoff Time">
+<meta property="og:description" content="Find a loan’s monthly payment, how much you can borrow for a given payment, or how long payoff takes. Shows total interest on every result.">
+<meta property="og:url" content="https://debtpayoffmath.com/loan-calculator/">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="/assets/site.css"><link rel="icon" href="/assets/brand/favicon.svg" type="image/svg+xml"><link rel="icon" href="/assets/brand/icon-32.png" sizes="32x32" type="image/png"><link rel="apple-touch-icon" href="/assets/brand/icon-180.png">
+<style>:root{--brand:#9f1239;--font:Georgia, "Times New Roman", serif}</style>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://debtpayoffmath.com/#org","name":"Debt Payoff Math","url":"https://debtpayoffmath.com/","description":"Debt Payoff Math is a free set of debt and loan calculators that show how long payoff takes, what it costs in interest, and how each strategy compares."},{"@type":"WebApplication","name":"Loan Calculator","url":"https://debtpayoffmath.com/loan-calculator/","description":"Find a loan’s monthly payment, how much you can borrow for a given payment, or how long payoff takes. Shows total interest on every result.","applicationCategory":"FinanceApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"publisher":{"@id":"https://debtpayoffmath.com/#org"}},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Debt Payoff Math","item":"https://debtpayoffmath.com/"},{"@type":"ListItem","position":2,"name":"Loan Calculator","item":"https://debtpayoffmath.com/loan-calculator/"}]}]}</script>
+
+<script src="/assets/calculator.js" defer></script>
+<script src="/assets/calc-core.js" defer></script>
+</head>
+<body>
+<header class="site"><div class="wrap"><a class="logo" href="/" aria-label="Debt Payoff Math home"><span class="logo-mark"><img class="lk" src="/assets/brand/lockup.svg" alt="" width="633" height="238" loading="eager"></span></a><nav class="site"><a href="/loan-calculator/">Loan</a><a href="/interest-calculator/">Interest</a><a href="/amortization-calculator/">Amortization Schedule</a><a href="/personal-loan-calculator/">Personal Loan</a></nav></div></header>
+<main><div class="wrap">
+<nav class="breadcrumb" aria-label="Breadcrumb"><a href="/">Debt Payoff Math</a> › Loan Calculator</nav>
+<h1>Loan Calculator</h1>
+<p class="answer">A <strong>loan calculator</strong> finds your monthly payment, how much you can borrow, or how long payoff takes. A $25,000 loan at 8% APR over 60 months costs $506.91 a month and $5,414.59 in total interest. Change any one input and every result updates, so you can compare offers before you apply.</p>
+<p class="updated">Updated <time datetime="2026-09-20">September 20, 2026</time> · By <a href="/about/">Debt Payoff Math</a></p>
+<div id="calculator" data-calc="loan"><noscript>This tool needs JavaScript turned on.</noscript></div>
+<div class="ad-slot"><!-- Ad slot 1 (below the tool). Empty until the ad network is approved; reserve its height in CSS first. --></div>
+<h2>How is a loan payment calculated?</h2>
+<p>A fixed loan payment comes from the standard amortization formula: payment = P × r ÷ (1 − (1 + r)^−n), where P is the amount borrowed, r is the APR divided by 12, and n is the number of monthly payments. Each payment covers that month’s interest first; the rest reduces the balance.</p><p>For $25,000 at 8% over 60 months, r is 0.08 ÷ 12. The formula gives $506.91. In the first month, interest is $25,000 × 0.08 ÷ 12 = $166.67, so $340.24 goes to principal. As the balance falls, the interest share shrinks and the principal share grows, while the payment stays the same. The <a href="/amortization-calculator/">amortization schedule calculator</a> shows that split year by year.</p><p>Rates vary by loan type. In the <a href="https://www.federalreserve.gov/releases/g19/current/" rel="nofollow noopener">Federal Reserve G.19 release</a> of September 8, 2026, commercial banks averaged 7.14% on 60-month new car loans and 11.86% on 24-month personal loans in the second quarter of 2026.</p><p>Enter the APR from your loan offer rather than the interest rate if they differ. The <a href="https://www.consumerfinance.gov/ask-cfpb/what-is-the-difference-between-a-loan-interest-rate-and-the-apr-en-733/" rel="nofollow noopener">CFPB</a> (reviewed August 28, 2026) explains that the APR is the interest rate plus additional lender fees, so it better reflects the loan’s cost. This calculator treats the APR as the rate, so it does not add fees separately.</p>
+<h2>How much can I borrow for a set payment?</h2>
+<p>Choose <strong>Amount I can borrow</strong> and the tool runs the payment formula in reverse. At 8% APR, a $500 monthly payment supports a $24,659.22 loan over 60 months. A longer term raises that amount, and a higher rate lowers it. The tool also shows the total interest you would pay.</p><div class="table-wrap"><table class="data"><thead><tr><th>$500 a month at 8% APR</th><th>Amount you can borrow</th><th>Total interest</th></tr></thead><tbody><tr><td>36 months</td><td>$15,955.90</td><td>$2,044.10</td></tr><tr><td>60 months</td><td>$24,659.22</td><td>$5,340.78</td></tr><tr><td>72 months</td><td>$28,517.26</td><td>$7,482.74</td></tr></tbody></table></div><p>Stretching from 60 to 72 months lets you borrow $3,858.04 more for the same payment, but adds $2,141.96 in interest.</p><p>The third mode, <strong>Time to pay off</strong>, answers a different question: how long an existing balance lasts at a given payment. $25,000 at 8% paid at $500 a month takes 62 months, with $5,511.17 in interest. If the payment does not cover the monthly interest, the tool warns you that the loan will never be repaid.</p><p>Before settling on a payment, check how it fits with your other debts using the <a href="/debt-to-income-ratio-calculator/">debt-to-income ratio calculator</a>.</p>
+<h2>How does the term change total interest?</h2>
+<p>A longer term lowers the monthly payment but raises total interest, because the balance stays outstanding longer. For $25,000 at 8%, moving from 36 to 84 months cuts the payment by more than half but more than doubles the interest. Lenders may also charge a different rate for different terms.</p><div class="table-wrap"><table class="data"><thead><tr><th>Term</th><th>Monthly payment</th><th>Total interest</th></tr></thead><tbody><tr><td>36 months</td><td>$783.41</td><td>$3,202.73</td></tr><tr><td>48 months</td><td>$610.32</td><td>$4,295.51</td></tr><tr><td>60 months</td><td>$506.91</td><td>$5,414.59</td></tr><tr><td>72 months</td><td>$438.33</td><td>$6,559.83</td></tr><tr><td>84 months</td><td>$389.66</td><td>$7,731.05</td></tr></tbody></table></div><p>All rows use the same 8% APR so the term is the only change. Each extra year adds roughly $1,100 to $1,200 of interest on this loan.</p><p>A middle path is to take the longer term for a lower required payment and pay extra when you can, if the loan has no prepayment penalty. The <a href="/debt-payoff-calculator/">debt payoff calculator</a> shows how much time and interest extra payments save. If your loan has an origination fee, the <a href="/personal-loan-calculator/">personal loan calculator</a> shows the APR once the fee is included.</p>
+<h2>Frequently asked questions</h2>
+<div class="faq">
+<details><summary>What is the monthly payment on a $25,000 loan?</summary><p>At 8% APR, a $25,000 loan costs $783.41 a month over 36 months, $506.91 over 60 months, or $389.66 over 84 months. Total interest ranges from $3,202.73 to $7,731.05. A different rate changes every figure, so enter the APR from your own offer.</p></details>
+<details><summary>How long will it take to pay off my loan?</summary><p>Pick Time to pay off, then enter your balance, APR and monthly payment. The tool applies each payment to that month’s interest first and counts the months until the balance reaches zero. For example, $25,000 at 8% paid at $500 a month takes 62 months and $5,511.17 in interest.</p></details>
+<details><summary>Does this loan calculator include fees?</summary><p>Not separately. It uses the rate you enter, so enter the APR, which the CFPB describes as the interest rate plus additional lender fees. If a fee is taken out of the loan before you receive the money, the personal loan calculator on this site shows the monthly payment, the cash you actually get and the resulting APR.</p></details>
+</div>
+<h2>Sources</h2>
+<ul class="sources">
+<li><a href="https://www.consumerfinance.gov/" rel="nofollow noopener">CFPB — Consumer Financial Protection Bureau</a></li>
+<li><a href="https://www.federalreserve.gov/releases/g19/current/" rel="nofollow noopener">Federal Reserve — G.19 Consumer Credit</a></li>
+<li><a href="https://www.consumerfinance.gov/ask-cfpb/what-is-the-difference-between-a-loan-interest-rate-and-the-apr-en-733/" rel="nofollow noopener">CFPB — What is the difference between a loan interest rate and the APR? (reviewed August 28, 2026)</a></li>
+</ul>
+<h2>Related tools</h2>
+<ul>
+<li><a href="/debt-to-income-ratio-calculator/">Debt-to-Income Ratio Calculator</a></li>
+<li><a href="/amortization-calculator/">Amortization Schedule Calculator</a></li>
+<li><a href="/personal-loan-calculator/">Personal Loan Calculator</a></li>
+<li><a href="/interest-calculator/">Interest Calculator</a></li>
+<li><a href="/debt-payoff-calculator/">Debt Payoff Calculator</a></li>
+<li><a href="/credit-card-payoff-calculator/">Credit Card Payoff Calculator</a></li>
+<li><a href="/debt-consolidation-calculator/">Debt Consolidation Calculator</a></li>
+<li><a href="/debt-snowball-calculator/">Debt Snowball Calculator</a></li>
+</ul>
+<p class="disclaimer">Educational calculators, not financial or credit advice. Your lender’s statement and loan agreement decide the real figures.</p>
+</div></main>
+<footer class="site"><div class="wrap">
+<p><a href="/loan-calculator/">Loan Calculator</a> <a href="/interest-calculator/">Interest Calculator</a> <a href="/amortization-calculator/">Amortization Schedule Calculator</a> <a href="/personal-loan-calculator/">Personal Loan Calculator</a> <a href="/debt-payoff-calculator/">Debt Payoff Calculator</a> <a href="/credit-card-payoff-calculator/">Credit Card Payoff Calculator</a> <a href="/">All tools</a></p>
+<p><a href="/about/">About</a><a href="/methodology/">Methodology</a><a href="/contact/">Contact</a><a href="/privacy/">Privacy</a><a href="/terms/">Terms</a></p>
+<p>Educational calculators, not financial or credit advice. Your lender’s statement and loan agreement decide the real figures.</p>
+<p>© <span id="y"></span> Debt Payoff Math</p>
+</div></footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
+</html>

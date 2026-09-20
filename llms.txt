@@ -1,0 +1,23 @@
+# Debt Payoff Math
+
+> Debt Payoff Math is a free set of debt and loan calculators that show how long payoff takes, what it costs in interest, and how each strategy compares.
+
+## Tools
+- [Credit Card Payoff Calculator](https://debtpayoffmath.com/credit-card-payoff-calculator/): See how long it takes to pay off a credit card at a fixed payment or by a deadline, and what paying only the minimum really costs.
+- [Debt Snowball Calculator](https://debtpayoffmath.com/debt-snowball-calculator/): List your debts and see the month each one is paid off with the snowball method, total interest, and how it compares with the avalanche method.
+- [Debt Avalanche Calculator](https://debtpayoffmath.com/debt-avalanche-calculator/): Plan your payoff by paying the highest-APR debt first. See each debt’s payoff month, total interest, and the saving over the snowball method.
+- [Debt Consolidation Calculator](https://debtpayoffmath.com/debt-consolidation-calculator/): Compare your current debts with a consolidation loan, including the origination fee, to see the new payment, payoff time and total cost.
+- [Debt-to-Income Ratio Calculator](https://debtpayoffmath.com/debt-to-income-ratio-calculator/): Calculate your debt-to-income ratio from monthly debt payments and gross income, with the housing-only ratio lenders also look at.
+- [Loan Calculator](https://debtpayoffmath.com/loan-calculator/): Find a loan’s monthly payment, how much you can borrow for a given payment, or how long payoff takes. Shows total interest on every result.
+- [Amortization Schedule Calculator](https://debtpayoffmath.com/amortization-calculator/): See a year-by-year amortization schedule for any loan, how much of each payment is interest, and what extra monthly principal saves.
+- [Personal Loan Calculator](https://debtpayoffmath.com/personal-loan-calculator/): Calculate a personal loan’s monthly payment and the true APR once an origination fee is taken out, plus the total cost of borrowing.
+- [Interest Calculator](https://debtpayoffmath.com/interest-calculator/): Calculate simple interest or interest compounded yearly, monthly or daily on any amount, with the effective annual rate for each.
+- [Debt Payoff Calculator](https://debtpayoffmath.com/debt-payoff-calculator/): See how much time and interest extra monthly payments and a one-time payment save on any loan, and the payment needed to finish by a date.
+
+## Guides and data
+- [Debt Snowball vs Avalanche](https://debtpayoffmath.com/snowball-vs-avalanche/): The avalanche usually saves interest; the snowball clears accounts sooner. The same debts run through both methods, with the research on each.
+- [Is Debt Consolidation a Good Idea?](https://debtpayoffmath.com/is-debt-consolidation-a-good-idea/): When consolidating saves money, when it does not, how it affects your credit, and the warning signs regulators flag in debt relief offers.
+
+## Sources
+- CFPB — Consumer Financial Protection Bureau: https://www.consumerfinance.gov/
+- Federal Reserve — G.19 Consumer Credit: https://www.federalreserve.gov/releases/g19/current/
