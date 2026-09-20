@@ -98,3 +98,124 @@ table.data td.num, table.data th.num { text-align: right; font-variant-numeric: 
 .logo-mark .lk { height: 4rem; width: auto; max-width: 100%; display: block;
   margin-block: 6px; }
 @media (max-width: 30rem) { .logo-mark .lk { height: 3.1rem; } }
+
+/* ===================== hero banner image ===================== */
+.hero-photo { margin: 0 0 1.4rem; }
+.hero-photo img { width: 100%; height: auto; aspect-ratio: 16 / 7; object-fit: cover;
+  border-radius: var(--radius); display: block;
+  box-shadow: 0 1px 2px rgba(15,23,42,.06), 0 16px 36px -22px rgba(15,23,42,.45); }
+@media (max-width: 40rem) { .hero-photo img { aspect-ratio: 3 / 2; } }
+
+/* ===================== footer blocks ===================== */
+footer.site .wrap { display: grid; gap: 1.8rem 2.2rem; grid-template-columns: 1fr; align-items: start; }
+footer.site .wrap > p { margin: 0; }
+.f-brand .footer-brand { display: inline-flex; width: max-content; max-width: 100%; }
+.f-brand .logo-mark .lk { height: 3.4rem; width: auto; display: block; }
+
+.f-col h3 { font-size: .72rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--muted); margin: 0 0 .7rem; }
+.f-col ul { list-style: none; margin: 0; padding: 0; display: grid; gap: .5rem; }
+.f-col li { margin: 0; }
+.f-col a { color: var(--ink); text-decoration: none; font-size: .92rem; display: inline-block; }
+.f-col a:hover { color: var(--brand); text-decoration: underline; }
+
+.f-legal { grid-column: 1 / -1; border-top: 1px solid var(--line); padding-top: 1rem;
+  display: flex; flex-wrap: wrap; gap: .35rem 1.8rem; justify-content: space-between; align-items: baseline; }
+.f-legal p { font-size: .84rem; color: var(--muted); line-height: 1.5; margin: 0; }
+.f-legal p:first-child { max-width: 62ch; }
+.f-legal p:last-child { white-space: nowrap; }
+
+@media (min-width: 34rem) { footer.site .wrap { grid-template-columns: repeat(2, minmax(0,1fr)); }
+  .f-brand { grid-column: 1 / -1; } }
+@media (min-width: 56rem) { footer.site .wrap { grid-template-columns: minmax(0,1.2fr) repeat(3, minmax(0,1fr)); }
+  .f-brand { grid-column: 1; } }
+
+/* ============ design system upgrade (per-site palette drives the colour) ============ */
+.wrap { max-width: 1100px; }
+
+/* type scale */
+main h1 { font-size: clamp(2rem, 1.2rem + 2.4vw, 3rem); line-height: 1.08; letter-spacing: -.02em;
+  margin: .2rem 0 .9rem; }
+main h2 { font-size: clamp(1.3rem, 1.05rem + .8vw, 1.7rem); line-height: 1.2; letter-spacing: -.01em;
+  margin: 2.2rem 0 .6rem; padding-top: .9rem; border-top: 2px solid var(--line); }
+main h3 { font-size: 1.05rem; margin: 1.4rem 0 .4rem; }
+
+/* answer becomes a brand callout, not a plain rule */
+main p.answer { background: var(--brand); color: #fff; border: 0; border-radius: var(--radius);
+  padding: 1.05rem 1.2rem; font-size: 1.02rem; line-height: 1.55; margin: 0 0 .9rem; }
+main p.answer a { color: #fff; text-decoration: underline; text-underline-offset: 2px; }
+main p.answer strong { color: #fff; }
+main p.updated { font-size: .82rem; color: var(--muted); letter-spacing: .04em;
+  text-transform: uppercase; margin: 0 0 1.2rem; }
+
+/* calculator as a card */
+#calculator { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 1.3rem; box-shadow: 0 1px 2px rgba(15,23,42,.05), 0 18px 40px -26px rgba(15,23,42,.45);
+  margin: 0 0 1.6rem; }
+#calculator .calc-form { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: .9rem 1.1rem; }
+
+/* data tables */
+.table-wrap { border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+table.data { width: 100%; border-collapse: collapse; }
+table.data th, table.data td { padding: .6rem .7rem; border-bottom: 1px solid var(--line); }
+table.data thead th { background: var(--soft); font-size: .78rem; letter-spacing: .05em;
+  text-transform: uppercase; color: var(--muted); }
+table.data tbody tr:last-child td { border-bottom: 0; }
+
+/* header / footer surfaces lift off the page */
+header.site { background: color-mix(in srgb, var(--surface) 82%, transparent);
+  border-bottom: 1px solid var(--line); backdrop-filter: saturate(140%) blur(6px); }
+footer.site { background: var(--soft); border-top: 1px solid var(--line); margin-top: 3rem;
+  padding: 2.2rem 0 1.8rem; }
+
+/* hero: text beside the image on desktop */
+.hero { display: grid; gap: 1.4rem 2.2rem; align-items: center; margin-bottom: 1.4rem; }
+@media (min-width: 60rem) { .hero { grid-template-columns: minmax(0,1.05fr) minmax(0,.95fr); }
+  .hero .hero-photo { margin: 0; } }
+.hero-photo img { aspect-ratio: 4 / 3; }
+@media (max-width: 60rem) { .hero-photo img { aspect-ratio: 16 / 8; } }
+
+/* ============ section cards ============ */
+main .sec { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius);
+  padding: 1.35rem 1.5rem 1.5rem; margin: 1.15rem 0; }
+main .sec > h2 { border-top: 0; padding-top: 0; margin-top: 0; }
+main .sec > :last-child { margin-bottom: 0; }
+main .sec .table-wrap { margin: .8rem 0 0; }
+main .sec:nth-of-type(even) { background: var(--soft); }
+@media (min-width: 60rem) { main .sec { padding: 1.6rem 1.9rem 1.7rem; } }
+
+/* ============ in-section photos ============ */
+.sec-photo { margin: .9rem 0 1rem; }
+.sec-photo img { width: 100%; height: auto; aspect-ratio: 16 / 8; object-fit: cover;
+  border-radius: var(--radius); display: block; }
+@media (max-width: 40rem) { .sec-photo img { aspect-ratio: 3 / 2; } }
+
+/* ============ wider canvas, readable measure ============ */
+.wrap { max-width: min(94vw, 1360px); }
+
+/* prose flows in two columns on wide screens so lines stay ~65 chars
+   while the section still fills the page; tables/figures span both. */
+@media (min-width: 78rem) {
+  main .sec { column-count: 2; column-gap: 2.6rem; }
+  main .sec > h2 { column-span: all; }
+  main .sec > .table-wrap,
+  main .sec > table,
+  main .sec > .sec-photo,
+  main .sec > .faq,
+  main .sec > ul.sources { column-span: all; break-inside: avoid; }
+  /* lists distribute their ITEMS across the columns; items stay whole */
+  main .sec > ul, main .sec > ol { break-inside: auto; }
+  main .sec > ul > li, main .sec > ol > li { break-inside: avoid; }
+  /* a list-only section runs its own two columns so it fills the row */
+  main .sec:has(> h2 + ul:last-child) { column-count: 1; }
+  main .sec:has(> h2 + ul:last-child) > ul { column-count: 2; column-gap: 2.6rem; }
+  main .sec:has(> h2 + ul:last-child) > ul > li { break-inside: avoid; }
+
+  /* single-child sections have nothing to balance — keep them one column */
+  main .sec:has(> h2 + .table-wrap:last-child),
+  main .sec:has(> h2 + .faq:last-child),
+  main .sec:has(> h2 + ul:last-child) { column-count: 1; }
+}
+/* hero can breathe on very wide screens */
+@media (min-width: 78rem) { .hero { grid-template-columns: minmax(0,1.15fr) minmax(0,.85fr); } }
