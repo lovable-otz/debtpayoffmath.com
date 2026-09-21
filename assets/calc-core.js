@@ -53,8 +53,7 @@
   try {
     const h = decodeURIComponent(location.hash.slice(1));
     if (h) Object.assign(state, JSON.parse(h));
-    // a shared link has been read: drop the entries from the address bar
-    if (h) history.replaceState(null, '', location.pathname + location.search);
+    // the shared entries stay in the address bar so the visitor can copy the link from there
   } catch (_) { /* ignore a malformed hash */ }
 
   const form = el('form', { class: 'calc-form', onsubmit: e => e.preventDefault(), novalidate: true });
@@ -122,6 +121,9 @@
 
   function update() {
     let r;
+    // keep the current entries in the address bar so copying from there gives a link to THIS result.
+    // The fragment is never sent to the server and browsers strip it from the Referer header.
+    try { history.replaceState(null, '', `#${encodeURIComponent(JSON.stringify(state))}`); } catch (_) {}
     try { r = C.compute(JSON.parse(JSON.stringify(state)), fmt); }
     catch (e) { r = { warnings: [`Could not calculate: ${e.message}`] }; }
     out.innerHTML = '';
